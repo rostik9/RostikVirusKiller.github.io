@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Лучшие способы удалить вирусы-ботнеты со своего компьютера. Пошаговая инструкция по удалению вредоносной программы">
+    <meta name="keywords" content="ботнет, вирусы, удаление вирусов, антивирус, защита ПК">
+    <meta name="author" content="Антивирусный эксперт">
+    <title>Удаление ботнетов | Защита ПК</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- подключение стилевого файла фреймворка bootstrap -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+ <!--подключение скриптового файла библиотеки jquery, необходимого для работы фреймворка-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!--подключение скриптового файла библиотеки popper, необходимого для работы фреймворка-->
+  <script src="https://cdn.jsdelivr.net/npm/ popper.js@1.16.0/dist/umd/popper.min.js"></script>
+ <!-- подключение скриптового файла фреймворка bootstrap -->
+ <script  src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Выбор вируса</h3>
+        <button class="pagination_link" data-href="Главная страница/index.html">главная страница</button>
+        <button class="pagination_link" data-href="Рекламное ПО/index.html">Рекламное ПО</button>
+        <button class="pagination_link" data-href="Вымогатели/index.html">Вымогатели</button>
+        <button class="pagination_link" data-href="Шпионское ПО/index.html">Шпионское ПО</button>
+        <button class="pagination_link" data-href="Трояны/index.html">Трояны</button>
+        <button class="pagination_link" data-href="Черви/index.html">Черви</button>
+        <button class="pagination_link" data-href="Руткиты/index.html">Руткиты</button>
+        <button class="pagination_link" data-href="Кейлоггеры/index.html">Кейлоггеры</button>
+        <button class="pagination_link" data-href="Ботнеты/index.html">Ботнеты</button>
+        <button class="pagination_link" data-href="Майнеры/index.html">Майнеры</button>
+    </div>
+
+    <div class="content">
+        <h1>Ботнеты</h1>
+    
+        <div class="menu">
+            <strong>Содержание:</strong>
+            <a href="#definition">Определение</a>
+            <a href="#signs">Признаки</a>
+            <a href="#causes">Причины</a>
+            <a href="#removal">Как удалить</a>
+        </div>
+    
+        <h2 id="definition">Определение</h2>
+        <p>Ботнет — это сеть заражённых устройств (ботов), которыми управляет хакер (ботмастер) без ведома владельцев. Ботнеты используются для DDoS-атак, майнинга, кражи данных и других киберпреступлений.</p>
+    
+        <h2 id="signs">Признаки</h2>
+        <ul>
+            <li>Резкое падение производительности компьютера.</li>
+            <li>Неожиданное увеличение загрузки процессора и сети.</li>
+            <li>Антивирус отключается без причины.</li>
+            <li>Неизвестные процессы в диспетчере задач.</li>
+            <li>Неожиданные соединения с интернет-адресами в фоновом режиме.</li>
+            <li>Частые сбои системы и перезагрузки.</li>
+        </ul>
+    
+        <h2 id="causes">Причины</h2>
+        <ul>
+            <li><strong>Фишинговые атаки</strong> — заражённые ссылки и вложения в письмах.</li>
+            <li><strong>Скачивание сомнительных программ</strong> — взломанный софт, генераторы ключей.</li>
+            <li><strong>Уязвимости в системе</strong> — устаревшее ПО и отсутствующие обновления.</li>
+            <li><strong>Поддельные обновления</strong> — ложные "обновления" браузера или антивируса.</li>
+            <li><strong>Заражённые сайты</strong> — могут автоматически загружать вирусы.</li>
+        </ul>
+    
+        <h2 id="removal">Как удалить?</h2>
+        <ul>
+            <li><strong>Отключение от сети:</strong>  
+                <ul>
+                    <li>Отключи Wi-Fi и сетевой кабель.</li>
+                    <li>Перезагрузи ПК в безопасном режиме.</li>
+                </ul>
+            </li>
+            <li><strong>Проверка антивирусами:</strong>  
+                <ul>
+                    <li>Запусти полное сканирование (Windows Defender, Malwarebytes, Dr.Web CureIt!).</li>
+                    <li>Удалите найденные угрозы.</li>
+                </ul>
+            </li>
+            <li><strong>Очистка автозагрузки и процессов:</strong>  
+                <ul>
+                    <li>Открыть <code>Диспетчер задач</code> (<code>Ctrl + Shift + Esc</code>).</li>
+                    <li>Выключить подозрительные процессы.</li>
+                    <li>Перейти в <code>MSConfig</code> (<code>Win + R</code> → <code>msconfig</code>) и отключить неизвестные элементы автозагрузки.</li>
+                </ul>
+            </li>
+            <li><strong>Проверка сетевых соединений:</strong>  
+                <ul>
+                    <li>Выполни в командной строке (<code>cmd</code>): <code>netstat -ano</code>.</li>
+                    <li>Если есть подозрительные подключения, найди соответствующий процесс в диспетчере задач и заверши его.</li>
+                </ul>
+            </li>
+            <li><strong>Очистка системы:</strong>  
+                <ul>
+                    <li>Удалить временные файлы (<code>Win + R</code> → <code>temp</code> и <code>%temp%</code>).</li>
+                    <li>Очистить реестр (<code>Win + R</code> → <code>regedit</code>, искать подозрительные записи).</li>
+                </ul>
+            </li>
+            <li><strong>Перепрошивка роутера (если нужно):</strong>  
+                <ul>
+                    <li>Сбрось настройки роутера на заводские.</li>
+                    <li>Поменяй пароль Wi-Fi и обнови прошивку.</li>
+                </ul>
+            </li>
+            <li><strong>Переустановка системы (радикальный метод):</strong>  
+                <ul>
+                    <li>Создай резервную копию данных.</li>
+                    <li>Переустанови Windows с чистого образа.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body><script src="script.js"></script>
+</html>
